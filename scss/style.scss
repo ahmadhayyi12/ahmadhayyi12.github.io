@@ -1,5 +1,91 @@
-$putih-abu : #F8F8F8;
+// FONTS
 
-body{
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+// COLORS
+
+$hitam : #212121;
+$putih-abu : #F8F8F8;
+$merah-maroon : #F36852;
+$maroon-muda : #FFE7DE;
+
+body {
     background-color: $putih-abu;
+    font-family: 'Nunito', sans-serif;
+
+    // START NAVBAR
+
+    nav {
+        .container {
+            a.navbar-brand {
+                color: $hitam;
+                font-weight: 800;
+                font-size: 22px;
+
+                .koma {
+                    color: $merah-maroon;
+                }
+            }
+
+            .collapse {
+                ul {
+                    li.nav-item {
+
+                        a.active {
+                            color: $merah-maroon;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // END NAVBAR
+
 }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+    body {
+        nav {
+            .container {
+                .collapse {
+                    ul {
+                        li.nav-item {
+                            margin-right: 25px;
+
+                            a {
+                                font-weight: bold;
+                                font-size: 16px;
+                            }
+                        }
+
+                        li.nav-item:hover {
+
+                            // border-bottom: solid 2px $hitam;
+                            // margin-bottom: -2px;
+                            a.nav-link {
+                                color: $hitam;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { 
+
+// }
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) { 
+
+// }
