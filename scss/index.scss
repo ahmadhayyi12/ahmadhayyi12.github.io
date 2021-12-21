@@ -4,8 +4,82 @@
 
 $hitam : #212121;
 $putih-abu : #F8F8F8;
+$abuabu : #707071;
 $merah-maroon : #F36852;
 $maroon-muda : #FFE7DE;
+
+body {
+       div:nth-child(2) {
+              .row {
+                     div:nth-child(2) {
+                            .welcome {
+                                   width: 137px;
+                                   height: 45px;
+                                   background-color: $maroon-muda;
+                                   font-family: Nunito;
+                                   font-weight: 600;
+                                   font-size: 20px;
+                                   border-radius: 7px;
+                                   color: $merah-maroon;
+                            }
+
+                            p:nth-child(2) {
+                                   font-family: Open Sans;
+                                   font-style: normal;
+                                   font-weight: 800;
+                                   font-size: 27px;
+
+                                   .koma {
+                                          color: $merah-maroon;
+                                   }
+                            }
+
+                            p:nth-child(3) {
+                                   font-weight: normal;
+                                   font-size: 16px;
+                                   line-height: 30px;
+                            }
+
+                            // Download CV
+                            a:nth-child(5) {
+                                   font-size: 16px;
+                                   color: $abuabu;
+                                   font-weight: 700;
+                                   transition: .3s;
+                            }
+
+                            a:nth-child(5):hover {
+                                   color: $hitam;
+                            }
+                     }
+              }
+       }
+
+       div.project {
+              background-color: $hitam;
+
+              .container {
+                     P:nth-child(1) {
+                            font-family: Open Sans;
+                            font-weight: 700;
+                            font-size: 30px;
+                            text-align: center;
+                     }
+              }
+       }
+
+       div.skills {
+              color: $hitam;
+              .container {
+                     P:nth-child(1) {
+                            font-family: Open Sans;
+                            font-weight: 700;
+                            font-size: 30px;
+                            text-align: center;
+                     }
+              }
+       }
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
@@ -13,38 +87,58 @@ $maroon-muda : #FFE7DE;
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
        body {
-              .container {
+              div:nth-child(2) {
                      .row {
-                            height: 100vh;
+                            height: 90vh;
 
-                            div {
+                            div:nth-child(1) {
+                                   order: 2;
+                            }
+
+                            div:nth-child(2) {
+                                   order: 1;
+
                                    .welcome {
-                                          width: 141px;
-                                          height: 43px;
-                                          background-color: $maroon-muda;
-                                          font-family: Nunito;
+                                          width: 150px;
+                                          height: 50px;
                                           font-weight: 600;
-                                          font-size: 20px;
-                                          border-radius: 5px;
-                                          color: $merah-maroon;
+                                          font-size: 23px;
                                    }
 
                                    p:nth-child(2) {
-                                          font-family: Open Sans;
-                                          font-style: normal;
                                           font-weight: 800;
-                                          font-size: 45px;
-
-                                          .koma {
-                                                 color: $merah-maroon;
-                                          }
+                                          font-size: 55px;
                                    }
 
                                    p:nth-child(3) {
-                                          font-weight: normal;
-                                          font-size: 16px;
-                                          line-height: 28px;
+                                          font-size: 18px;
                                    }
+
+                                   // Download CV
+                                   a:nth-child(5) {
+                                          font-size: 17px;
+                                          font-weight: 700;
+                                   }
+                            }
+                     }
+              }
+              div.project {
+                     .container {
+                            P:nth-child(1) {
+                                   font-weight: 800;
+                                   font-size: 40px;
+                                   text-align: left;
+                                   margin-top: 10px;
+                            }
+                     }
+              }
+              div.skills {
+                     .container {
+                            P:nth-child(1) {
+                                   font-weight: 800;
+                                   font-size: 40px;
+                                   text-align: left;
+                                   margin-top: 10px;
                             }
                      }
               }
