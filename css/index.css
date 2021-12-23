@@ -82,9 +82,9 @@ body div.skills .container div.row div i {
   margin-right: 5px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   body div:nth-child(2) .row {
-    height: 90vh;
+    height: 50vh;
   }
   body div:nth-child(2) .row div:nth-child(1) {
     -webkit-box-ordinal-group: 3;
@@ -95,6 +95,32 @@ body div.skills .container div.row div i {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  body div.project .container P:nth-child(1),
+  body div.skills .container P:nth-child(1) {
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  body div.project {
+    border-top: 3px solid #F36852;
+  }
+  body div.skills .container div.row div {
+    font-size: 21px;
+    margin-bottom: 32px;
+  }
+  body div.skills .container div.row div i {
+    font-size: 53px !important;
+    margin-right: 10px;
+  }
+  body div.skills .container hr {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  body div:nth-child(2) .row {
+    height: 90vh;
   }
   body div:nth-child(2) .row div:nth-child(2) .welcome {
     width: 150px;
@@ -113,24 +139,22 @@ body div.skills .container div.row div i {
     font-size: 17px;
     font-weight: 700;
   }
-  body div.project .container P:nth-child(1) {
+  body div.project .container P:nth-child(1),
+  body div.skills .container P:nth-child(1) {
     font-weight: 800;
-    font-size: 40px;
+    font-size: 35px;
     text-align: left;
     margin-top: 10px;
   }
-  body div.skills .container P:nth-child(1) {
-    font-weight: 800;
-    font-size: 40px;
-    text-align: left;
-    margin-top: 10px;
+  body div.project {
+    border-top: 3px solid #F36852;
   }
   body div.skills .container div.row div {
     font-size: 24px;
     margin-bottom: 35px;
   }
   body div.skills .container div.row div i {
-    font-size: 80px !important;
+    font-size: 65px !important;
     margin-right: 20px;
   }
   body div.skills .container hr {

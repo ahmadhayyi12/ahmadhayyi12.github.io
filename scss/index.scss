@@ -105,7 +105,60 @@ body {
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+       body {
+              div:nth-child(2) {
+                     .row {
+                            height: 50vh;
+
+                            div:nth-child(1) {
+                                   order: 2;
+                            }
+
+                            div:nth-child(2) {
+                                   order: 1;
+                            }
+                     }
+              }
+
+              div.project,
+              div.skills {
+                     .container {
+                            P:nth-child(1) {
+                                   font-weight: 800;
+                                   font-size: 30px;
+                                   margin-top: 10px;
+                            }
+                     }
+              }
+
+              div.project {
+                     border-top: 3px solid $merah-maroon;
+
+              }
+
+              div.skills {
+                     .container {
+
+                            div.row {
+                                   div {
+                                          i {
+                                                 font-size: 53px !important;
+                                                 margin-right: 10px;
+                                          }
+
+                                          font-size: 21px;
+                                          margin-bottom: 32px;
+                                   }
+                            }
+
+                            hr {
+                                   margin-bottom: 32px;
+                            }
+                     }
+              }
+       }
+}
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
@@ -114,13 +167,7 @@ body {
                      .row {
                             height: 90vh;
 
-                            div:nth-child(1) {
-                                   order: 2;
-                            }
-
                             div:nth-child(2) {
-                                   order: 1;
-
                                    .welcome {
                                           width: 150px;
                                           height: 50px;
@@ -146,30 +193,29 @@ body {
                      }
               }
 
-              div.project {
+              div.project,
+              div.skills {
                      .container {
                             P:nth-child(1) {
                                    font-weight: 800;
-                                   font-size: 40px;
+                                   font-size: 35px;
                                    text-align: left;
                                    margin-top: 10px;
                             }
                      }
               }
 
+              div.project {
+                     border-top: 3px solid $merah-maroon;
+              }
+
               div.skills {
                      .container {
-                            P:nth-child(1) {
-                                   font-weight: 800;
-                                   font-size: 40px;
-                                   text-align: left;
-                                   margin-top: 10px;
-                            }
 
                             div.row {
                                    div {
                                           i {
-                                                 font-size: 80px !important;
+                                                 font-size: 65px !important;
                                                  margin-right: 20px;
                                           }
 
@@ -185,6 +231,8 @@ body {
               }
        }
 }
+
+
 
 /*-- Write text as Animated --*/
 @keyframes write {
