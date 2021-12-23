@@ -28,7 +28,11 @@ body {
                                    font-style: normal;
                                    font-weight: 800;
                                    font-size: 27px;
-                                   
+                                   display: inline-block;
+                                   overflow: hidden;
+                                   white-space: nowrap;
+                                   animation: write 3s steps(40, end), cursor 1s step-end infinite;
+                                   border-right: 3px solid;
 
                                    .koma {
                                           color: $merah-maroon;
@@ -83,11 +87,12 @@ body {
 
                      div.row {
                             div {
-                                   i{
+                                   i {
                                           color: $merah-maroon;
                                           font-size: 45px !important;
                                           margin-right: 5px;
                                    }
+
                                    font-family: Nunito;
                                    font-style: normal;
                                    font-weight: 800;
@@ -160,20 +165,47 @@ body {
                                    text-align: left;
                                    margin-top: 10px;
                             }
+
                             div.row {
                                    div {
-                                          i{
+                                          i {
                                                  font-size: 80px !important;
                                                  margin-right: 20px;
                                           }
+
                                           font-size: 24px;
                                           margin-bottom: 35px;
                                    }
                             }
-                            hr{
+
+                            hr {
                                    margin-bottom: 35px;
                             }
                      }
               }
+       }
+}
+
+/*-- Write text as Animated --*/
+@keyframes write {
+       from {
+              width: 0%
+       }
+
+       to {
+              width: 83%
+       }
+}
+
+/*-- Animated blink cursor CSS--*/
+@keyframes cursor {
+
+       from,
+       to {
+              border-color: transparent;
+       }
+
+       50% {
+              border-color: #ff9800;
        }
 }

@@ -15,6 +15,12 @@ body div:nth-child(2) .row div:nth-child(2) p:nth-child(2) {
   font-style: normal;
   font-weight: 800;
   font-size: 27px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: write 3s steps(40, end), cursor 1s step-end infinite;
+          animation: write 3s steps(40, end), cursor 1s step-end infinite;
+  border-right: 3px solid;
 }
 
 body div:nth-child(2) .row div:nth-child(2) p:nth-child(2) .koma {
@@ -129,6 +135,44 @@ body div.skills .container div.row div i {
   }
   body div.skills .container hr {
     margin-bottom: 35px;
+  }
+}
+
+/*-- Write text as Animated --*/
+@-webkit-keyframes write {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 83%;
+  }
+}
+@keyframes write {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 83%;
+  }
+}
+
+/*-- Animated blink cursor CSS--*/
+@-webkit-keyframes cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ff9800;
+  }
+}
+@keyframes cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ff9800;
   }
 }
 /*# sourceMappingURL=index.css.map */
